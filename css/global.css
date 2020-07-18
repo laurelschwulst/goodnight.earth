@@ -1,0 +1,60 @@
+body {
+  background: #000;
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  position: relative;
+  height: 150vw;
+}
+
+#star {
+  position: absolute;
+  bottom: 2.25rem;
+  left: 1.5rem;
+  width: 20vw;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a g.star {
+  /*pointer-events: visible;*/
+}
+
+a#mobile-link {
+  display: block;
+  position: fixed;
+  z-index: 47;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 540px) {
+  #star {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1rem;
+  }
+  a g.star {
+    pointer-events: auto;
+    display: block;
+  }
+  .container {
+    height: auto;
+  }
+}

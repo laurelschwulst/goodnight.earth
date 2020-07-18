@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Modern Life Space</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+
+	<style>
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		html, body { height: 100%; }
+
+		iframe {
+			overflow-y: scroll;
+		}
+
+		img {
+			max-width: 100%;
+			pointer-events: none;
+		}
+
+		iframe .image {
+			pointer-events: none;
+		}
+
+		.images-container {
+			max-width: 60em;
+			margin: 0 auto 4em;
+		}
+
+		.images-container img {
+			display: block;
+			margin-bottom: 0.5em;
+		}
+
+		.swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: left;
+      font-size: 18px;
+			line-height: 1.3;
+      background: #fff;
+    }
+
+		.swiper-slide.text {
+			padding: 2.5em;
+			overflow-y: auto;
+		}
+
+		.swiper-slide.centered {
+			text-align: center;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+
+		a.return {
+			max-width: 6em;
+			display: inline-block;
+		}
+
+    </style>
+	</style>
+</head>
+
+<body>
+
+<!-- Swiper -->
+<div class="swiper-container">
+		<div class="swiper-wrapper">
+				<div class="swiper-slide text" data-hash="slide1">
+					<b>Modern Life Space</b><br><br>
+
+					<a href="#slide2">View book (cover)</a><br>
+					<a href="#slide3">View book (inside preview)</a><br>
+					<a href="#slide4">View outro letter</a><br>
+					<a href="#slide5">View original image collection (blog)</a><br><br>
+
+					by Laurel Schwulst<br>
+					with Goodnight Publishers, 2017<br><br>
+					Collected images from Airbnb listings from cities around the world, including: Amsterdam, Austin, Barcelona, Beijing, Berlin, Brooklyn, Buenos Aires, Copenhagen, Glasgow, Helsinki, Jakarta, Lisbon, London, Los Angeles, Malmö, Melbourne, Mexico City, Miami, Milan, Montevideo, Montreal, Moscow, New York, Osaka, Oslo, Paris, Reykjavik, Rio de Janeiro, San Francisco, Santiago, Sao Paulo, Seoul, Shanghai, Stockholm, Sydney, and Tokyo. Originally was a <a href="http://modernlifespace.tumblr.com" target="_blank">blog</a>.<br><br>
+
+					<!-- Available to purchase as perfect-bound 6 × 9 in. book, 208 pages, full color.<br><br> -->
+
+					<!-- $40 USD — Please email goodnight.publishers@gmail.com before purchasing if you are outside the US.<br><br> -->
+
+					<div id="button">
+						<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+					 <input type="hidden" name="cmd" value="_s-xclick">
+					 <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+					 ">
+					 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					 </form>
+					</div>
+
+				</div>
+				<div class="swiper-slide text" data-hash="slide2" style="background:url('images/space.jpg');">
+					<div class="images-container">
+						<img src="images/mls01.png">
+						<img src="images/mls02.png">
+						<img src="images/mls03.png">
+					</div>
+				</div>
+				<div class="swiper-slide text" data-hash="slide3">
+					<div class="images-container">
+						<div style="border: 1px solid #000; padding: 1em 1.25em 1.25em; display: inline-block; margin-bottom: 1em;">
+							<b>Table of Contents</b><br>
+							<ul style="margin-left: -1em; margin-bottom: 0;">
+							<li>Intro poem (37 words)</li>
+							<li>91 image diptychs on space background</li>
+							<li>Outro letter (1,400 words)</li>
+							<li>Index of cities</li>
+							<li>Index of image thumbnails</li>
+						</ul>
+						</div>
+						<br><br>
+						<pre style="font-size: 2vw; line-height: 1.1; text-align: left;">
+A modern life space:
+
+- lets you enter
+  (door)
+
+- lets you see the outside space
+  (window)
+
+- lets you see your own self
+  (mirror)
+
+- lets you see what else exists besides yourself
+  (light, life, screen)
+
+- lets you exit
+  (door)
+
+						</pre>
+						<img src="images/mls-book06.png">
+						<img src="images/mls-book05.png">
+						<img src="images/mls-book04.png">
+						<img src="images/mls-book08.png">
+						<img src="images/mls-book03.png">
+					</div>
+				</div>
+				<div class="swiper-slide text" data-hash="slide4">
+				<div style="max-width: 740px; margin: 0 auto; font-family: monospace;">
+				<p style="margin-top:0;">
+					Dear viewer,
+				</p><p>
+					“Modern Life Space” is a collection of images. Before being printed in this book, they lived (and may still be living) on the website Airbnb.com, which as you may know, lets people rent out their own homes to others on the site. It’s useful for when home or apartment owners are on vacation, or if they happen to have a second residence.
+					</p><p>
+					I started collecting these images shortly after graduating college while living in the first real apartment of my own. But what I mean by “real” and “own” is not that the previous apartments I lived in were fake, or that I lived by myself. Like most everyone my age who lived in New York in 2011, I had a roommate since it wouldn’t haven been affordable otherwise. Rather, this was the first place I inhabited that was completely empty upon move-in. Our apartment’s initial emptiness made me wonder what should be there, if anything possibly could be. Unlike apartments in college, I was purposely not accepting inherited objects or furniture. I was making a point to start anew, both to match the emptiness of the initial space and the emptiness of my mind as it entered this real world. I had my first real job at this time, so this was the first time I could populate my apartment with newness.
+</p><p>
+					How to fill the space? At first, looked at interior and lifestyle magazines and blogs for inspiration. But each featured home or apartment seemed the same as the previous, and it was hard to tell if people actually lived in the spaces. It reminded me how homes for sale are often “staged” to give the appearance of real (but not too real) life. Shortly after, I had the idea to surf Airbnb.com since I could see “real” homes where people actually lived. (At the time, in 2011, Airbnb was new enough that it genuinely felt like a territory to explore, and I could trust that most of the apartments were real homes. Since then, Airbnb has struggled with people using the site to advertise their hotel or rental properties, which goes against the company’s interpersonal-focused slogan, “Belong Anywhere.”)
+</p><p>
+					When I would return home from work, I would surf Airbnb by typing in a city I was curious to know better. Eventually, I had a list of cities and would travel from one to the other, trying to visit at least two different cities in the same surf session to make sure I was truly exploring. By the end of the project, I had explored 36 different cities in 5 different continents.
+</p><p>
+					I started posting my collected images online at www.modernlifespace.tumblr.com. I called this blog “Modern Life Space” and gave the page a black starry background, as if all my apartment fantasies were hovering in outer space. I remember the first image I ever posted, from an apartment in New York, featured a beaded curtain in a doorway painted to look like a Maneki-neko (a Chinese waving cat, a symbol of good luck). I remember enjoying surfing through Berlin’s apartments for their spacious beauty and light and Tokyo’s for their elegant efficiency. Overall, I enjoyed the images on Airbnb because they were both real and modern since users could upload them anytime, and they weren’t curated like magazines or blogs with singular authors.
+</p><p>
+					My favorite apartments featured a sprinkling of interesting objects throughout an otherwise generic, sparse space. It was important to populate the space, but not too much: just enough to render it unique while leaving room for what could be: emptiness and imagination. An apartment needed to be “empty” enough so you could imagine yourself inhabiting it, yet “full” enough with interest to generate thoughts and conversation. I was reminded of a quote by C.S. Lewis, who talks about this balance:
+</p><p>
+					“It is good that the window is transparent, because the street or garden beyond it is opaque. What if you saw through the garden too? It is no use trying to ‘see through’ everything. If you see through everything, then everything is transparent. A wholly transparent world is an invisible world. To ‘see through’ all things is the same as not to see.”
+</p><p>
+					After posting for a few weeks, my focus began to shift. While I still required the images to have the right level of emptiness to fullness and contain design inspiration (in the sense that I could copy it for my own apartment), I was also interested in strange photograph compositions and the anthropomorphizing of objects. Like on page 103 in Malmö, a houseplant looks out the window to a red sports car parked outside, or on page 137 in San Francisco, a reflection of a closed window, hauntingly centered in the frame of the mirror. I also started paying more attention to the sequence of my images: I hoped, by posting images one after the other, to draw comparisons between far-apart cities (“what do bedrooms in Buenos Aires and Seoul have in common?”), or to show how cultural symbols (like the Chinese good-luck cat, an acoustic guitar, or an image of a dolphin) could travel across the globe.
+</p><p>
+					I kept the blog for a couple years, collecting around 200 images between 2011 and 2013. In 2015, the journalist Kyle Chayka interviewed me about Modern Life Space for his article “Welcome to AirSpace: How Silicon Valley helps spread the same sterile aesthetic across the world,” published on www.theverge.com. I spoke about desiring a balance between generic and interesting in a living space, and the article echoed the same, while ultimately deciding that the Airbnb has lead to the homogenization of interior spaces, specifically in cities. This strange “place” the article calls “AirSpace” is not in the air, but on land, and undeniably influenced by the internet:
+</p><p>
+					“Minimalist furniture. Craft beer and avocado toast. Reclaimed wood. Industrial lighting. Cortados. Fast internet. The homogeneity of these spaces means that traveling between them is frictionless, a value that Silicon Valley prizes… Changing places can be as painless as reloading a website. You might not even realize you’re not where you started. … Even as it markets unique places as consumable goods, Airbnb helps its users travel without actually having to change their environment, or leave the warm embrace of AirSpace.”
+</p><p>
+					Around the time I stopped posting to the blog, I visited a few of my postings in real life by using Airbnb, like in Malmö (156) and Tokyo (19). After studying the images for so long, I was quick to notice the shifting of furniture, a misplaced item, or some other update. I wondered where the guitar was in Malmö. I left a scuff on the floor in Tokyo. There was something quite empty about each of these experiences. Interestingly enough, my favorite Airbnb trips weren’t ones that made it to my blog. I enjoyed interacting with a young lady and her mom in a homestay-like experience while traveling alone in Busan; and later I rented a beautiful cabin in the woods for a weekend in Bolinas. Airbnb can be great for traveling alone, when you’re genuinely interested in interacting with people; or if you’re interested in visiting a place that is off-the-grid or in nature since hotels aren’t an option. At this point in 2017, when I travel for vacation or for work to a city, I prefer booking a hotel room since the price is often comparable, and usually any personal interaction is minimal and predictable. I don’t enjoy wondering whether something is a hotel or a home: I prefer it to be obvious. And when I stay in someone’s home, I like to talk with them.
+</p><p>
+					My blog’s title, “Modern Life Space” made all my posts attempts at answering this question: “What makes a living space modern?” While sorting my images for publication, I realized each picture focused on at least one of six themes: door, window, screen, mirror, light, and life. (When I say “life,” I mostly mean plant life, but you can think of the term broadly as well.) I started to organize the photos in a new order based on these themes.
+</p><p>
+					What you have before you today is a visual tour through my collection and through these spaces. I wonder: Are these rooms still as pleasantly empty yet full as once pictured? What was the last sound that bounced around inside each of them?
+</p><p>
+					Best wishes,
+</p><p>
+					Laurel
+</p>
+</div>
+</div>
+				<div class="swiper-slide" data-hash="slide5">
+					<iframe src="http://modernlifespace.tumblr.com" height="100%" width="100%" frameBorder="0"></iframe>
+				</div>
+				<div class="swiper-slide text" data-hash="slide6">
+					<div class="images-container">
+						<a href="../index.html" class="return"><img src="../images/goodnight-publishers-mark.png"></a><br>
+						Return
+					</div>
+				</div>
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+		<!-- Add Arrows -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+		spaceBetween: 30,
+		hashnav: true,
+		hashnavWatchState: true
+});
+</script>
+
+</body>
+
+</html>

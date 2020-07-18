@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Floating Leaf</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+
+	<style>
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		html, body { height: 100%; }
+
+		iframe {
+			overflow-y: scroll;
+		}
+
+		img {
+			max-width: 100%;
+			pointer-events: none;
+		}
+
+		iframe .image {
+			pointer-events: none;
+		}
+
+		.images-container {
+			max-width: 60em;
+			margin: 0 auto 4em;
+		}
+
+		.images-container img {
+			display: block;
+			margin-bottom: 0.5em;
+		}
+
+		.swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: left;
+      font-size: 18px;
+			line-height: 1.3;
+      background: #fff;
+    }
+
+		.swiper-slide.text {
+			padding: 2.5em;
+			overflow-y: auto;
+		}
+
+		.swiper-slide.centered {
+			text-align: center;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+
+		a.return {
+			max-width: 6em;
+			display: inline-block;
+		}
+
+    </style>
+	</style>
+</head>
+
+<body>
+
+<!-- Swiper -->
+<div class="swiper-container">
+		<div class="swiper-wrapper">
+				<div class="swiper-slide text" data-hash="slide1">
+					<b>Floating Leaf</b><br><br>
+
+					by Dan Brewster<br>
+					with Goodnight Publishers, 2018<br><br>
+
+					Drawings created by workers on Amazon Mechanical Turk responding to the prompt: "Draw a leaf floating on water."<br><br>
+
+
+				Originally presented as a Twitter bot, "Leafboy" (<a href="https://twitter.com/_leafboy" target="_blank">https://twitter.com/_leafboy</a>), created by Brewster in 2015.<br><br>
+
+				</div>
+				<div class="swiper-slide text" data-hash="slide2" style="background:#99982F;">
+					<div class="images-container">
+						<img src="images/floating-leaf.png" style="border: 8px solid #926E86;">
+					</div>
+				</div>
+				<div class="swiper-slide text" data-hash="slide3">
+					<div class="images-container">
+						<a href="../index.html" class="return"><img src="../images/goodnight-publishers-mark.png"></a><br>
+						Return
+					</div>
+				</div>
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+		<!-- Add Arrows -->
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper('.swiper-container', {
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+		spaceBetween: 30,
+		hashnav: true,
+		hashnavWatchState: true
+});
+</script>
+
+</body>
+
+</html>
